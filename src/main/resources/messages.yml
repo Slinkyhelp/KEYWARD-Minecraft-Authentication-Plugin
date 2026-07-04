@@ -1,0 +1,54 @@
+prefix: "&8[&bKeyward&8] "
+
+register:
+  usage: "&cUsage: /register <password> <confirm>"
+  already-authenticated: "&cYou are already authenticated."
+  account-exists: "&cThis account is already registered. Use /login."
+  password-mismatch: "&cPasswords do not match."
+  password-too-short: "&cPassword must be at least {min} characters."
+  password-breached: "&cThis password is too common. Choose a stronger one."
+  attack-mode: "&cRegistrations are temporarily restricted due to suspicious activity. Try again later."
+  captcha-prompt: "&eComplete the verification challenge in the opened menu."
+  captcha-failed: "&cVerification failed. Please try registering again."
+  success: "&aAccount registered and verified successfully!"
+
+login:
+  usage: "&cUsage: /login <password>"
+  no-account: "&cNo account found. Use /register <password> <confirm>."
+  already-authenticated: "&cYou are already authenticated."
+  locked-out: "&cToo many failed attempts. Try again in {seconds} seconds."
+  wrong-password: "&cIncorrect password."
+  success: "&aLogin successful! Welcome back."
+  flagged-ip: "&cYour connection has been flagged for suspicious activity."
+
+changepassword:
+  usage: "&cUsage: /changepassword <old> <new> <confirm>"
+  not-authenticated: "&cYou must be logged in first."
+  wrong-old: "&cCurrent password is incorrect."
+  mismatch: "&cNew passwords do not match."
+  success: "&aPassword changed successfully."
+
+twofa:
+  usage: "&cUsage: /2fa <enable|disable|verify> [code]"
+  enabled: "&aTwo-factor authentication enabled. Secret: {secret} Backup codes: {codes}"
+  disabled: "&aTwo-factor authentication disabled."
+  invalid-code: "&cInvalid code."
+  not-authenticated: "&cYou must be logged in first."
+  verified: "&aCode verified successfully."
+
+limbo:
+  prompt-login: "&eYou have an account. Please /login <password>."
+  prompt-register: "&eWelcome! Please /register <password> <confirm> to secure your account."
+  timeout: "&cAuthentication timed out."
+  blocked-action: "&cYou must authenticate first!"
+
+keyward:
+  no-permission: "&cYou do not have permission to do this."
+  panic-confirm: "&cType /keyward panic confirm within 30 seconds to proceed."
+  panic-executed: "&cPANIC MODE TRIGGERED. All sessions revoked, all players must re-authenticate."
+  verify-result: "&eJar SHA-256 checksum: {hash}"
+  flagged: "&aFlagged {ip}."
+  unflagged: "&aUnflagged {ip}."
+  reloaded: "&aConfiguration reloaded."
+  attack-mode-on: "&c[Keyward] Attack Mode ACTIVATED - suspicious login velocity detected!"
+  attack-mode-off: "&a[Keyward] Attack Mode deactivated."

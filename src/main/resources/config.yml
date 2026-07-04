@@ -1,0 +1,26 @@
+database:
+  file: keyward.db
+
+security:
+  argon2:
+    memory-kb: 65536
+    iterations: 3
+    parallelism: 1
+  password:
+    min-length: 8
+  captcha:
+    enabled: true
+  session:
+    timeout-minutes: 10
+  lockout:
+    max-attempts: 5
+    base-cooldown-seconds: 30
+  attack-mode:
+    failure-threshold: 20
+    unique-ip-threshold: 5
+    window-seconds: 60
+  limbo:
+    timeout-seconds: 60
+
+premium:
+  auto-verify: true
